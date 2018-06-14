@@ -13,6 +13,9 @@ const CategoryList = (props) => {
           <Link to={`/category/${category.id}`}>{category.title}</Link>
         </Title>
         <div>
+          {<Link to='/edit'><button className='button add-category'>Edit Category</button></Link>}
+        </div>
+        <div>
           {category.libraryText}
         </div>
       </div>
